@@ -63,6 +63,7 @@
     }
 
     async function getFriendship() {
+      alert("Hello getFriendship")
       const friend = await liff.getFriendship()
       document.getElementById("friendship").append(friend.friendFlag)
       if(!friend.friendFlag){
@@ -72,6 +73,7 @@
     }
 
     async function sendMsg() {
+      alert("Hello Msg")
       if(liff.getContext().type !== "none"){
         await liff.liff.sendMessages([
           {
@@ -93,6 +95,7 @@
     }
 
     async function getUserProfile() {
+      alert("Hello getUserProfile")
       const profile = await lift.getProfile()
       document.getElementById("pictureUrl").src = profile.pictureUrl
       document.getElementById("userId").append(profile.userId)
