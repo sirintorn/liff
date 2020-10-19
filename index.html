@@ -60,6 +60,10 @@
     }
 
     function openWindow() {
+      liff.openWindow{
+        url:"https://line.me",
+        external: true
+      }
     }
 
     async function getFriendship() {
@@ -67,7 +71,7 @@
       document.getElementById("friendship").append(friend.friendFlag)
       if(!friend.friendFlag){
         if(confirm("เพิ่มเพื่อนหน่อยจ้า"))ฐ
-        window.location = "https://lin.ee/T7M5GUu"
+        window.location = "https://lin.ee/T7M5GUu"  //link to add line OA friend.
       }
     }
 
